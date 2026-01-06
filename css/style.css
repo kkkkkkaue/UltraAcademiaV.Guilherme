@@ -122,7 +122,6 @@ background-image: none;
 /*NAV*/
 /* NAV FIXA */
 .navbar {
-  position: fixed;
   top: 0;
   width: 100%;
   z-index: 1050;
@@ -260,6 +259,7 @@ background-image: none;
   margin: 0 auto;
 
 }
+
 
 
 
