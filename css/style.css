@@ -1,0 +1,260 @@
+/* style.css */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.ultra-title {
+	letter-spacing: 0.08em;
+	letter-spacing: 0.12em;
+}
+
+
+.ultra-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #111;
+  
+  /* melhora a renderização */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ultra-pink {
+ color: #a6368a;
+}
+.ultra-purple{
+ color:#6f2dbd;
+}
+
+.alert-ultra {
+  background-color: #6f2dbd !important;
+  color: white !important;
+  border: 1px solid #6f2dbd;
+}
+
+/* Formatação Estésstica Botão Hambuerguer */
+
+.ultra-toggler {
+  width: 58px;
+  height: 48px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px; /* pode ajustar */
+	border: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.ultra-toggler .navbar-toggler-icon {
+background-image: none;
+  width: 26px;
+  height: 18px;
+  position: relative;
+}
+
+.ultra-toggler .navbar-toggler-icon::before,
+.ultra-toggler .navbar-toggler-icon::after,
+.ultra-toggler .navbar-toggler-icon span {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  border-radius: 2px;
+}
+
+/* Linha superior */
+.ultra-toggler .navbar-toggler-icon::before {
+  top: 0;
+  background-color: #6f2dbd; /* roxo */
+}
+
+/* Linha do meio */
+.ultra-toggler .navbar-toggler-icon span {
+  top: 8px;
+  background-color: #ff8c00; /* laranja */
+}
+
+/* Linha inferior */
+.ultra-toggler .navbar-toggler-icon::after {
+  bottom: 0;
+  background-color: #ff4fa3; /* rosa */
+}
+
+.ultra-toggler:hover .navbar-toggler-icon::before,
+.ultra-toggler:hover .navbar-toggler-icon::after,
+.ultra-toggler:hover .navbar-toggler-icon span {
+  opacity: 0.8;
+}
+
+.ultra-toggler:hover {
+  background-color: #fff;
+  /* ↓ Aparece só no hover */
+  border-color: #ff6fcf; /* cor Ultra */
+  box-shadow: 0 0 0 2px rgba(255,111,207,0.3);
+}
+
+/* Remove foco visual persistente */
+.ultra-toggler:focus,
+.ultra-toggler:focus-visible {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/*Efeito fade substituído pelo slide lateral*/
+
+/* Container do menu mobile */
+
+/*NAV*/
+.navbar {
+    position: relative;
+    z-index: 1050;
+}
+
+.navbar-toggler {
+    position: relative;
+    z-index: 1100;
+}
+
+.navbar-collapse {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 280px; /* largura do menu */
+    background-color: #212529; /* mesmo bg da navbar */
+    padding: 1rem;
+
+    transform: translateX(-100%);
+    transition: transform 0.35s ease-in-out;
+
+    z-index: 1040;
+
+   top: 70px; /* ajuste conforme a altura da navbar */
+    height: calc(100vh - 70px);
+}
+
+/* Quando o menu estiver aberto */
+.navbar-collapse.show {
+    transform: translateX(0);
+}
+
+/* Deixar o restante da página esscuro */
+
+.offcanvas-backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/*Botão WhatsApp*/
+.whatsapp-float {
+    position: fixed;
+    bottom: 36px;
+    right: 36px;
+    width: 64px;
+    height: 64px;
+
+    background-color: #25d366;
+    color: #fff;
+
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 28px;
+    text-decoration: none;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    z-index: 1200;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.08);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+    color: #fff;
+}
+
+/*Hover do card*/
+
+.card-click {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 16px;
+}
+
+
+/*Para o efeito ficar sobreposto (e não empurrar os outros cards)*/
+
+.card-click:hover,
+.card-click:focus-within {
+  transform: scale(1.06);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+  cursor: pointer;
+  border: 2px solid #6f2dbd;
+}
+
+
+/* Card Plano Detalhe */
+.plano-detalhe {
+  padding-left: 0;
+  padding-right: 0;
+  flex: 1;
+}
+
+.card-plano-detalhe {
+  max-height: calc(100vh - 140px);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1100px; /* igual container lg */
+  margin: 0 auto;
+}
+
+/* Conteúdo com scroll interno */
+.card-plano-detalhe .list-group {
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+/* Imagem controlada */
+.card-plano-detalhe img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+.card-plano-detalhe .col-md-5 {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+}
+
+/* Remove hover herdado */
+.card-click.card-plano-detalhe:hover {
+  transform: none;
+  box-shadow: none;
+  cursor: default;
+}
+
+.plano-wrapper {
+  max-width: 1100px; /* mesmo do card */
+  margin: 0 auto;
+}
