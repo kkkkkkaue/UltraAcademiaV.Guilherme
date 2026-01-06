@@ -216,37 +216,48 @@ background-image: none;
 }
 
 .card-plano-detalhe {
-  max-height: calc(100vh - 140px);
-  overflow: hidden;
+  height: calc(100vh - 140px);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-width: 1100px; /* igual container lg */
+  max-width: 1100px;
   margin: 0 auto;
+}
+
+.card-plano-detalhe > .row {
+  flex: 1;
+  min-height: 0;
+  height: 100%;
 }
 
 /* Conteúdo com scroll interno */
 .card-plano-detalhe .list-group {
   overflow-y: auto;
-  flex-grow: 1;
+  flex: 1;
 }
 
 /* Imagem controlada */
 .card-plano-detalhe img {
-  width: 100%;
-  height: 100%;
+    max-width: 100%;
+  max-height: 100%;
   object-fit: contain;
-  object-position: center;
-  display: block;
+}
+
+.card-plano-detalhe .col-md-5,
+.card-plano-detalhe .col-md-7 {
+  height: 100%;
 }
 
 .card-plano-detalhe .col-md-5 {
-  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f8f9fa;
+  max-height: 100%;
+}
+
+.card-plano-detalhe .col-md-7 {
+  display: flex;
+  flex-direction: column;
+  min-height: 0; /* ← isso desbloqueia o scroll */
 }
 
 /* Remove hover herdado */
