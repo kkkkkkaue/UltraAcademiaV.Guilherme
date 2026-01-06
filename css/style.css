@@ -160,7 +160,7 @@ background-image: none;
 
 /* FAZ O FOOTER DESCER */
 #footer {
-  margin-top: auto;
+  margin-top: 0;
 }
 
 /*Botão WhatsApp*/
@@ -267,4 +267,5 @@ background-image: none;
   margin: 0 auto;
 
 }
+
 
