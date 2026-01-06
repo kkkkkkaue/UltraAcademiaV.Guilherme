@@ -158,6 +158,10 @@ background-image: none;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+/* FAZ O FOOTER DESCER */
+#footer {
+  margin-top: auto;
+}
 
 /*Botão WhatsApp*/
 .whatsapp-float {
@@ -263,3 +267,4 @@ background-image: none;
   margin: 0 auto;
 
 }
+
