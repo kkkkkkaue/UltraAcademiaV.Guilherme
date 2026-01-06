@@ -1,8 +1,8 @@
-<nav class="navbar sticky-top navbar-dark bg-dark py-1">
+<nav class="navbar fixed-top navbar-dark bg-dark py-1">
   			<div class="container-fluid px-2">
 				<!-- ESQUERDA -->
     				<div class="d-flex align-items-center">
-      					<button class="navbar-toggler ultra-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarUltra">
+      					<button class="navbar-toggler ultra-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarUltra">
   						<span class="navbar-toggler-icon">
 							<span></span>
 						</span>
@@ -13,38 +13,16 @@
 					<h2 class="fw-bold text-uppercase ultra-title mb-2 display-6 align-self-center ultra-pink">V. Guilherme</h2>
     				</div>
     				<!-- MENU -->
-    				<div class="offcanvas offcanvas-start bg-dark text-white"
-     tabindex="-1"
-     id="navbarUltra">
-
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title">Menu</h5>
-    <button type="button"
-            class="btn-close btn-close-white"
-            data-bs-dismiss="offcanvas"></button>
-  </div>
-
-  <div class="offcanvas-body">
-    <ul class="navbar-nav mb-3">
-      <li class="nav-item">
-        <a class="nav-link" href="https://ultraacademia.com.br/index.php?AC=Unidades">Unidades</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://ultraacademia.com.br/index.php?AC=Modalidades">Modalidades</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://ultraacademia.com.br/index.php?AC=Faq">Perguntas frequentes</a>
-      </li>
-    </ul>
-
-    <a class="btn btn-danger btn-sm w-100">
-      Quero me matricular
-    </a>
-  </div>
-</div>
+    				<div class="collapse navbar-collapse" id="navbarUltra">
+      					<ul class="navbar-nav ms-3 mb-2 mb-lg-0">
+						<li class="nav-item"><a class="nav-link"href="index.html">Planos</a></li>
+        					<li class="nav-item"><a class="nav-link"href="https://ultraacademia.com.br/index.php?AC=Unidades">Unidades</a></li>
+        					<li class="nav-item"><a class="nav-link"href="https://ultraacademia.com.br/index.php?AC=Modalidades">Modalidades</a></li>
+        					<li class="nav-item"><a class="nav-link"href="https://ultraacademia.com.br/index.php?AC=Faq">Perguntas frequentes</a></li>
+      					</ul>
+      					<a class="btn btn-danger btn-sm ms-lg-3">
+        					Quero me matricular
+      					</a>
+    				</div>
 			</div>
-
-</nav>
-
-
-
+		</nav>
