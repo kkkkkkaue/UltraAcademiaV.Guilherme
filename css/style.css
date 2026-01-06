@@ -119,16 +119,21 @@ background-image: none;
 /* Container do menu mobile */
 
 /*NAV*/
+/* NAV FIXA */
 .navbar {
-    position: relative;
-    z-index: 1050;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1050;
 }
-
 .navbar-toggler {
     position: relative;
     z-index: 1100;
 }
 
+
+
+/* MENU LATERAL */
 .navbar-collapse {
   position: fixed;
   top: 70px;
@@ -141,13 +146,21 @@ background-image: none;
   transform: translateX(-100%);
   transition: transform 0.35s ease-in-out;
 
-  display: block !important;
   visibility: hidden;
 }
 
+/* MENU ABERTO */
 .navbar-collapse.show {
   transform: translateX(0);
   visibility: visible;
+}
+
+/* OVERRIDE CRÍTICO DO BOOTSTRAP */
+.navbar-collapse.collapsing {
+  transform: translateX(-100%);
+  transition: transform 0.35s ease-in-out;
+  visibility: visible;
+  height: auto !important;
 }
 
 .offcanvas-backdrop {
@@ -268,6 +281,7 @@ background-image: none;
   margin: 0 auto;
 
 }
+
 
 
 
