@@ -152,6 +152,9 @@ background-image: none;
     transform: translateX(0);
 }
 
+.offcanvas-backdrop {
+  transition: opacity 0.35s ease-in-out;
+}
 /* Deixar o restante da página esscuro */
 
 .offcanvas-backdrop {
@@ -267,6 +270,7 @@ background-image: none;
   margin: 0 auto;
 
 }
+
 
 
 
