@@ -154,10 +154,6 @@ background-image: none;
   visibility: visible;
 }
 
-.offcanvas {
-  width: 280px;
-}
-
 /* FECHANDO */
 .navbar-collapse.collapsing {
   transform: translateX(-100%);
@@ -290,6 +286,7 @@ background-image: none;
   margin: 0 auto;
 
 }
+
 
 
 
