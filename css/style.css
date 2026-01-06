@@ -130,27 +130,42 @@ background-image: none;
 }
 
 .navbar-collapse {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 280px; /* largura do menu */
-    background-color: #212529; /* mesmo bg da navbar */
-    padding: 1rem;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 280px;
+  height: calc(100vh - 70px);
+  background-color: #212529;
+  padding: 1rem;
 
-    transform: translateX(-100%);
-    transition: transform 0.35s ease-in-out;
+  transform: translateX(-100%);
+  transition: transform 0.35s ease-in-out;
 
-    z-index: 1040;
-
-   top: 70px; /* ajuste conforme a altura da navbar */
-    height: calc(100vh - 70px);
+  z-index: 1040;
 }
 
-/* Quando o menu estiver aberto */
+/* ENTRADA */
 .navbar-collapse.show {
-    transform: translateX(0);
+  transform: translateX(0);
+}.navbar-collapse {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 280px;
+  height: calc(100vh - 70px);
+  background-color: #212529;
+  padding: 1rem;
+
+  transform: translateX(-100%);
+  transition: transform 0.35s ease-in-out;
+
+  z-index: 1040;
 }
+
+/* ENTRADA */
+.navbar-collapse.show {
+  transform: translateX(0);
+}s
 
 .offcanvas-backdrop {
   transition: opacity 0.35s ease-in-out;
@@ -270,6 +285,7 @@ background-image: none;
   margin: 0 auto;
 
 }
+
 
 
 
