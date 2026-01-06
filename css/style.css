@@ -134,10 +134,8 @@ background-image: none;
 
 /* OFFCANVAS */
 .offcanvas {
-  position: fixed;
-  top: 70px;
-  height: calc(100vh - 70px);
-  width: 280px;
+  top: 100px;
+  height: calc(100vh - 100px);
 }
 
 
@@ -259,6 +257,7 @@ background-image: none;
   margin: 0 auto;
 
 }
+
 
 
 
