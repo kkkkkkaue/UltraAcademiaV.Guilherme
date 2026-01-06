@@ -27,96 +27,116 @@
 	</script>
 	<body class="">
 		<div id="nav"></div>
-		<!-- Div que está abrigando tudo -->
-		<div class="container pt-2 page-content">
+	<!-- Div que está abrigando tudo -->
+		<div class="container-fluid my-5 pt-5 plano-detalhe">
 
-			<!-- Linha do Título e Planos -->
-			<div class="row g-4">
+			<div class="plano-wrapper">
 
-  				<!-- TÍTULO -->
-				<div class="col-12">
-    					<h2 class="fw-bold text-uppercase ultra-title mt-6 mb-2 display-6">
-      						Planos disponíveis
-    					</h2>
-  				</div>
+				<!-- Linha do Título e Planos -->
+				<div class="row">
 
- 				<!-- COLUNA 1 -->
-				<div class="col-lg-4 col-md-6 col-sm-12 justify-content-center">
+ 					<!-- COLUNA 1 -->
+					<div class="col justify-content-center">
+						
+						<!-- ID 1 Para Script Mostrar o Conteúdo do Plano Gold -->
+						<div id="plano-1" class="d-none">
 
+					 		<!-- CARD 1 -->
+							<div class="card shadow-sm card-plano-detalhe">
+  								<div class="row g-0 align-items-center">
 
+    									<!-- IMAGEM -->
+    									<div class="col-md-5">
+      										<img src="img/descricao-plano-gold.png" class="img-fluid rounded-start" alt="Plano Gold">
+    									</div>
 
-					 <!-- CARD 1 -->
-					<div class="card card-click" onclick="abrirPlano(1)" >
-  						<img src="img/Gold.png" class="card-img-top" alt="Plano Gold">
-  						<div class="card-body">
-    							<h5 class="card-title">Gold</h5>
-    							<p class="card-text">+ Flexibilidade com a fidelidade</p>
-  						</div>
-  						<ul class="list-group list-group-flush">
-							<li class="list-group-item">Plano recorrente por 12 meses</li>
-							<li class="list-group-item">
-  								<div class="fw-semibold text-uppercase small text-muted">
-    									<small><span class="text-secondary">Unidade</span></small>
-  								</div>
-  								<div class="fw-bold">
-    									Ultra Vila Guilherme
- 								</div>
-							</li>
-    							<li class="list-group-item">
-  								<div class="fw-semibold text-uppercase small text-muted">
-    									<small><span class="text-secondary">Estacionamento</span></small>
-  								</div>
-  								<div class="fw-bold">
-    									<i class="bi bi-check-circle-fill ultra-purple me-2"></i>Incluso
-								</div>
-							</li>
-							<li class="list-group-item">
-  								<div class="fw-semibold text-uppercase small text-muted">
-    									<small><span class="text-secondary">Aulas coletivas</span></small>
-  								</div>
-  								<div class="fw-bold">
-    									Danças + Lutas (Muai Thai)
-							</li>
-							<li class="list-group-item">
-  								<div class="fw-semibold text-uppercase small text-muted">
-    									<small><span class="text-secondary">Fidelidade</span></small>
-  								</div>
-  								<div class="fw-bold">
-    									Apenas 3 meses
- 								</div>
-							</li>
-							<li class="list-group-item">
-  								<div class="fw-semibold text-uppercase small text-muted">
-    									<small><span class="text-secondary">APP TEM SAÚDE</span></small>
-  								</div>
-  								<div class="fw-bold">
-    									<i class="bi bi-x-circle-fill me-2"></i>Não Incluso </br>(Direito a consulta com clínico geral, nutricionista e psicólogi  1x ao mês)
-							</li>
-							<li class="list-group-item">
-  								<div class="fw-semibold text-uppercase small text-muted">
-    									<small><span class="text-secondary">Cancelamento</span></small>
-  								</div>
-  								<div class="fw-bold">
-    									Aviso Prévio de 30 dias </br> Multa de 20% sobre o valor residual caso encerre antes dos 3 meses
-							</li>
-							<li class="list-group-item">
-  								<div class="fw-semibold text-uppercase small text-muted">
-    									<small><span class="text-secondary">Valor Mensal</span></small>
-  								</div>
-  								<div class="fw-bold">
-    									<h2 class="mt-2 mb-2">R$ 137,00</h2>
-								</div>
-							</li>
-  						</ul>
-					</div>
-				</div>
- 				<!-- COLUNA 2 -->
-				<div class="col-lg-4 col-md-6 col-sm-12 justify-content-center">
+    									<!-- CONTEÚDO -->
+    									<div class="col-md-7">
+      										<div class="card-body">
+    											<h5 class="card-title">Gold</h5>
+    											<p class="card-text">+ Flexibilidade com a fidelidade</p>
+  										</div>
+  										<ul class="list-group list-group-flush">
+											<li class="list-group-item">Plano recorrente por 12 meses</li>
+											<li class="list-group-item">
+  												<div class="fw-semibold text-uppercase small text-muted">
+    													<small><span class="text-secondary">Unidade</span></small>
+  												</div>
+  												<div class="fw-bold">
+    													Ultra Vila Guilherme
+ 												</div>
+											</li>
+    											<li class="list-group-item">
+  												<div class="fw-semibold text-uppercase small text-muted">
+    													<small><span class="text-secondary">Estacionamento</span></small>
+  												</div>
+  												<div class="fw-bold">
+    													<i class="bi bi-check-circle-fill ultra-purple me-2"></i>Incluso
+												</div>
+											</li>
+											<li class="list-group-item">
+  												<div class="fw-semibold text-uppercase small text-muted">
+    													<small><span class="text-secondary">Aulas coletivas</span></small>
+  												</div>
+  												<div class="fw-bold">
+    													Danças + Lutas (Muai Thai)
+												</div>
+											</li>
+											<li class="list-group-item">
+  												<div class="fw-semibold text-uppercase small text-muted">
+    													<small><span class="text-secondary">Fidelidade</span></small>
+  												</div>
+  												<div class="fw-bold">
+    													Apenas 3 meses
+ 												</div>
+											</li>
+											<li class="list-group-item">
+  												<div class="fw-semibold text-uppercase small text-muted">
+    													<small><span class="text-secondary">APP TEM SAÚDE</span></small>
+  												</div>
+  												<div class="fw-bold">
+    													<i class="bi bi-x-circle-fill me-2"></i>Não Incluso </br>(Direito a consulta com clínico geral, nutricionista e psicólogi  1x ao mês)
+												</div>
+											</li>
+											<li class="list-group-item">
+  												<div class="fw-semibold text-uppercase small text-muted">
+    													<small><span class="text-secondary">Cancelamento</span></small>
+  												</div>
+  												<div class="fw-bold">
+    													Aviso Prévio de 30 dias </br> Multa de 20% sobre o valor residual caso encerre antes dos 3 meses
+												</div>
+											</li>
+											<li class="list-group-item">
+  												<div class="fw-semibold text-uppercase small text-muted">
+    													<small><span class="text-secondary">Valor Mensal</span></small>
+  												</div>
+  												<div class="fw-bold">
+    													<h2 class="mt-2 mb-2">R$ 137,00</h2>
+												</div>
+											</li>
+  										</ul>
 
-					<!-- CARD 2 -->
-					<div class="card card-click" onclick="abrirPlano(2)" >
-  						<img src="img/GoldPro.png" class="card-img-top" alt="Plano Gold Pro">
-  						<div class="card-body">
+      									</div>
+    								</div>
+
+  							</div>
+						</div>
+
+						<!-- ID 2 Para Script Mostrar o Conteúdo do Plano GoldPRO-->
+						<div id="plano-2" class="d-none">
+
+					 		<!-- CARD 2 -->
+							<div class="card shadow-sm card-plano-detalhe">
+  								<div class="row g-0 align-items-center">
+
+    									<!-- IMAGEM -->
+    									<div class="col-md-5">
+      										<img src="img/descricao-plano-gold-pro.png" class="img-fluid rounded-start" alt="Plano Gold Pro">
+    									</div>
+
+    									<!-- CONTEÚDO -->
+    									<div class="col-md-7">
+      									<div class="card-body">
     							<h5 class="card-title">Gold Pro</h5>
     							<p class="card-text">Custo e benefício</p>
   						</div>
@@ -178,14 +198,27 @@
 								</div>
 							</li>
   						</ul>
-					</div>
-				</div>
-				<!-- COLUNA 3 -->
-				<div class="col-lg-4 col-md-6 col-sm-12 justify-content-center">
-					<!-- CARD 3 -->
-					<div class="card card-click" onclick="abrirPlano(3)">
-  						<img src="img/Ultra360.png" class="card-img-top" alt="Ultra 360s">
-  						<div class="card-body">
+      									</div>
+    								</div>
+
+  							</div>
+						</div>
+
+						<!-- ID 1 Para Script Mostrar o Conteúdo do Plano Ultra 360 -->
+						<div id="plano-3" class="d-none">
+
+					 		<!-- CARD 3 -->
+							<div class="card shadow-sm card-plano-detalhe">
+  								<div class="row g-0 align-items-center">
+
+    									<!-- IMAGEM -->
+    									<div class="col-md-5">
+      										<img src="img/descricao-plano-ultra-360.png" class="img-fluid rounded-start" alt="Plano Ultra 360	">
+    									</div>
+
+    									<!-- CONTEÚDO -->
+    									<div class="col-md-7">
+      										<div class="card-body">
     							<h5 class="card-title">Ultra 360</h5>
     							<p class="card-text">+ Vantajoso</p>
   						</div>
@@ -248,27 +281,31 @@
 								</div>
 							</li>
   						</ul>
+      									</div>
+    								</div>
+
+  							</div>
+						</div>
+						
+						<!-- ALERTA -->
+    						<div class="alert alert-ultra mt-5" role="alert">
+      							<h5 class="d-flex align-items-center gap-2 mb-1">
+        							<i class="bi bi-credit-card-fill"></i>
+        							<strong>Pagamento somente com cartão de crédito</strong>
+     							</h5>
+      							<small>(Não compromete seu limite)</small>
+    						</div>
 					</div>
-					
 				</div>
 
+
 			</div>
-			<!-- ROW DO ALERTA -->
-			<div class="row mt-5">
-  				<div class="col-lg-12">
-    					<div class="alert alert-ultra" role="alert">
-      						<h5 class="d-flex align-items-center gap-2 mb-1">
-        						<i class="bi bi-credit-card-fill"></i>
-        						<strong>Pagamento somente com cartão de crédito</strong>
-      						</h5>
-      						<small>(Não compromete seu limite)</small>
-   	 				</div>
-  				</div>
-			</div>
+			
 		</div>
 		<a href="https://api.whatsapp.com/send/?phone=5511941236314&text&type=phone_number&app_absent=0" class="whatsapp-float" target="_blank" aria-label="Falar no WhatsApp">
     			<i class="bi bi-whatsapp"></i>
 		</a>
+
 
 		 <div id="footer"></div>
 		<script src="js/include.js"></script>
@@ -276,6 +313,7 @@
 	</body>
 
 </html>
+
 
 
 
