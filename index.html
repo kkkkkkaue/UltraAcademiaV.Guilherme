@@ -272,27 +272,11 @@
 
 		 <div id="footer"></div>
 		<script src="js/include.js"></script>
-		<script>
-const menu = document.getElementById('navbarUltra');
-
-menu.addEventListener('hide.bs.collapse', function (e) {
-  e.preventDefault(); // bloqueia o fechamento imediato
-
-  menu.classList.remove('show'); // dispara animação de saída
-
-  setTimeout(() => {
-    menu.classList.remove('collapsing');
-    menu.style.visibility = 'hidden';
-  }, 350); // mesmo tempo do transition
-});
-
-menu.addEventListener('show.bs.collapse', function () {
-  menu.style.visibility = 'visible';
-});
-</script>
+	
 	</body>
 
 </html>
+
 
 
 
