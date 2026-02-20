@@ -50,7 +50,7 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 8px; /* pode ajustar */
-	border: 1px solid transparent;
+  border: 1px solid #6f2dbd !important; /* borda visível */
   transition: border-color 0.2s ease;
 }
 
@@ -75,19 +75,19 @@ background-image: none;
 /* Linha superior */
 .ultra-toggler .navbar-toggler-icon::before {
   top: 0;
-  background-color: #6f2dbd; /* roxo */
+  background-color: RGBA(47, 166, 168, 1); /* verde */
 }
 
 /* Linha do meio */
 .ultra-toggler .navbar-toggler-icon span {
   top: 8px;
-  background-color: #ff8c00; /* laranja */
+  background-color: RGBA(243,142,52,1); /* laranja */
 }
 
 /* Linha inferior */
 .ultra-toggler .navbar-toggler-icon::after {
   bottom: 0;
-  background-color: #ff4fa3; /* rosa */
+  background-color: RGBA(180,68,140,1); /* roxo */
 }
 
 .ultra-toggler:hover .navbar-toggler-icon::before,
@@ -97,10 +97,11 @@ background-image: none;
 }
 
 .ultra-toggler:hover {
-  background-color: #fff;
+  background-color: #dcdcdc;
+  transform: translateY(-1px);
   /* ↓ Aparece só no hover */
   border-color: #ff6fcf; /* cor Ultra */
-  box-shadow: 0 0 0 2px rgba(255,111,207,0.3);
+  box-shadow: 0 0 0 3px rgba(255,111,207,0.3);
 }
 
 /* Remove foco visual persistente */
@@ -272,3 +273,4 @@ background-image: none;
   max-width: 1100px; /* mesmo do card */
   margin: 0 auto;
 }
+
