@@ -50,7 +50,7 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 8px; /* pode ajustar */
-  border: 1px solid #6f2dbd !important; /* borda visível */
+  border: 1px solid #dcdcdc !important; /* borda visível */
   transition: border-color 0.2s ease;
 }
 
@@ -100,7 +100,7 @@ background-image: none;
   background-color: #dcdcdc;
   transform: translateY(-1px);
   /* ↓ Aparece só no hover */
-  border-color: #ff6fcf; /* cor Ultra */
+  border-color: #6f2dbd; /* cor Ultra */
   box-shadow: 0 0 0 3px rgba(255,111,207,0.3);
 }
 
@@ -282,5 +282,6 @@ background-image: none;
   max-width: 1100px; /* mesmo do card */
   margin: 0 auto;
 }
+
 
 
